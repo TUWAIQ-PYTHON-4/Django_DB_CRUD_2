@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publisher list</title>
+</head>
+<body>
+<h1>Publisher list</h1>
+<ul>
+    {% for item1 in Publisher_list %}
+    <li>
+        <span>Publisher name :</span> <span>{{ item1.item.name}}</span></li>
+    <br>
+    <li><span>Publisher email :</span> <span>{{ item1.item.email}}</span></li>
+    <br>
+    <li><span>Publisher website :</span> <span>{{ item1.item.website}}</span></li>
+    <br>
+    {% endfor %}
+</ul>
+</body>
+</html>
