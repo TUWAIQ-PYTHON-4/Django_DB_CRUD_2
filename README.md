@@ -1,16 +1,25 @@
 # Django_DB_CRUD_2
 
 
-## CRUD on Publisher Model
+## CRUD on Tasks Model in PMApp
 
-In your previous project (Movies Project), Complete the following steps:
+<strong>In my PMProject:</strong>
 
 ### In views.py:
 
-- Add Publisher_list method returns all objects in a context dictionary.
+<b>- Added a method named index that returns all objects in a context dictionary.</b>
 
-### In Publisher_list.html:
+![image](https://user-images.githubusercontent.com/63616896/170081599-2a401956-53e9-425c-beec-1ef3bd573124.png)
 
-- Retrieve (Publisher Name, Publisher Website, Publisher Email) inside \<ul> and \<li> 
 
-Add url mapping in urls.py.
+### In home.html:
+
+<b>- Retrieved the (task title, task description , task time_estimate) inside \<ul> and \<li> </b>
+
+![image](https://user-images.githubusercontent.com/63616896/170081876-1959c4b0-0e0d-4aee-8dfa-a266dabdc25c.png)
+
+  <b>Added url mapping in urls.py.</b>
+
+### Final resualt:
+![image](https://user-images.githubusercontent.com/63616896/170081992-041628c2-2ec5-402f-9777-0ff3a67f5cd8.png)
+
