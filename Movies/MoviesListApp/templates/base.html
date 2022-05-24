@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome </title>
+    </head>
+    <body>
+        <h2>Publishers</h2>
+        <ul class="list_group">
+            {% for i in publisher_list %}
+            <li class="list-group-item">
+                <span class="text-info">Publisher Name: </span> <span> {{ i.publisher.name }} </span>
+                <br>
+                <span class="text-info">Publisher Website: </span> <span> {{ i.publisher.website }} </span>
+                <br>
+                <span class="text-info">Publisher Email: </span> <span> {{ i.publisher.email }} </span>
+            </li>
+            <br>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
