@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+    {% load static %}
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="{% static 'css/bootstrap.min.css' %}" >
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1 style="text-align:center;">This will appear in all pages</h1>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
+

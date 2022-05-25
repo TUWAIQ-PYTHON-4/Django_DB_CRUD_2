@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My amazing about page{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token%}
+        {{ from.as_p}}
+        <input type="submit" value="Submit">
+    {% endblock content %}
+</body>
+</html>
