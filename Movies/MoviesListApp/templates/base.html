@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,19 @@
     <title>Welcome to my page</title>
 </head>
 <body>
-<h1><em>this content will appear on all pages
+<h1><em>this content will appear on all pages</em>
 {% block content%}
+    {% for i in Publisher_list %}
+    <ul>
+        publisher
+
+  <li>
+      publisher name:{{i.P.name}}
+
+  </li>
+
+</ul>
+     {% endfor %}
 
     {% endblock%}
 

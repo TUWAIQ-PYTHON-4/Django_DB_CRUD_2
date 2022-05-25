@@ -1,10 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 
+from MoviesListApp import models
 from MoviesListApp.models import Publisher
 
 
 def index(request):
-    return render(request, 'base.html')
+    P = models.Publisher.objects.all()
+    return render(request, 'base.html', P)
 
 
 def search(request):
@@ -12,7 +14,7 @@ def search(request):
 
     return render(request, 'search.html', {'search': search})
 
+# def Publisher_list(self):
+#    for self.publisher = get_object_or_404(Publisher, name=self.kwargs['publisher']):
 
- def Publisher_list(self):
-     self.publisher = get_object_or_404(Publisher, name=self.kwargs['publisher'])
-     return Publisher.objects.filter(publisher=self.publisher)
+#     return Publisher.objects.filter(publisher=self.publisher)
