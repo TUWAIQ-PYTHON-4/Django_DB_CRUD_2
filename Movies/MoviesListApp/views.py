@@ -5,8 +5,8 @@ from MoviesListApp.models import Publisher
 
 
 def index(request):
-    P = models.Publisher.objects.all()
-    return render(request, 'base.html', P)
+    context= models.Publisher.objects.all()
+    return render(request, 'base.html', {'context':context})
 
 
 def search(request):
