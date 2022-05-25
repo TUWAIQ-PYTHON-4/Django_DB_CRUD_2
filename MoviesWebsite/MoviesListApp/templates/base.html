@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to GAMERFAX </title>
+</head>
+<body>
+<h1>Welcome to my website.<em>{{search_word}}</em> </h1>
+
+<h1> publishers: </h1>
+<ul>
+    {% for i in publishers %}
+    <li>
+        {{i.publishers.name}}
+        {{i.publishers.email}}
+        {{i.publishers.website}}
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
